@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #DBDBDB;
+    z-index: 1;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    width: 935px;
+}
+.topo ion-icon{
+    font-size: 26px;
+}
+.topo input{
+    display: flex;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 70px;
+    width: 215px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #DBDBDB;
+}
+.topo input:focus{
+    outline: none;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos .borda{
+    height: 70%;
+    margin: 0px 10px;
+    border: 1px solid lightgray;
+}
+.icones-acoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icones-acoes ion-icon{
+    margin-right: 10px;
+}
