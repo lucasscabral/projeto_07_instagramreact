@@ -2,12 +2,13 @@ import React from 'react';
 
 
 function Post(props){
+    const[like, setLike] = React.useState("color-default")
     function reacoes(){
-     console.log("OLaaa");
-     const [curtiu, setCurtiu] = React.useState("heart-outline")
-     function clicado(){
-         setCurtiu("heart");
-     }
+        //console.log("OLaaa");
+        function likePost(){
+            setLike("curtiu");
+        }
+    
     }
     return(
         <div class="caixas-conteudo">
@@ -24,7 +25,7 @@ function Post(props){
             <div class="rodape-post">
                 <div class="box-acoes-usuario">
                     <div class="acoes-esquerda">
-                        <ion-icon name="heart-outline" onClick={reacoes}></ion-icon>
+                        <ion-icon name="heart-outline" class={like} onClick={reacoes}></ion-icon>
                         <ion-icon name="chatbubble-outline" ></ion-icon>
                         <ion-icon name="paper-plane-outline" ></ion-icon>
                     </div>
@@ -41,13 +42,19 @@ function Post(props){
     )
 }
 
+let posts =[
+    {image:"imagens/meowed 1.svg",name:"lucas" ,imageFeed:"imagens/dog 1.svg" ,curtiu:"respondeai",curtidas:"101.523,pessoas"},
+    {image:"imagens/meowed 1.svg",name:"gabriel" ,imageFeed:"imagens/dog 1.svg" ,curtiu:"respondeai",curtidas:"103.800 pessoas"},
+    {image:"imagens/meowed 1.svg",name:"sabrina" ,imageFeed:"imagens/dog 1.svg" ,curtiu:"respondeai" ,curtidas:"101.400 pessoas"}
+]
 
 export default function Feeds (){
     return(
         <div class="posts">
-             <Post image="imagens/meowed 1.svg" name="lucas" imageFeed="imagens/gato-telefone 1.svg" curtiu="respondeai" curtidas="101.523 pessoas"/>
-             <Post image="imagens/meowed 1.svg" name="gabriel" imageFeed="imagens/filomoderna 1.svg" curtiu="respondeai" curtidas="103.800 pessoas"/>
-             <Post image="imagens/meowed 1.svg" name="sabrina" imageFeed="imagens/dog 1.svg" curtiu="respondeai" curtidas="101.400 pessoas"/>
+            {
+               posts.map(publicao => <Post image={publicao.image} name={publicao.name} imageFeed={publicao.imageFeed} curtiu={publicao.curtiu} curtidas={publicao.curtidas}/>) 
+            } 
+            
         </div>
     )
 }

@@ -12,6 +12,13 @@ function SugestoesPerfis(props){
 }
 
 
+let perfis =[
+    {image:"imagens/badvibesmemes 1.svg",name:"bad.vibes.memes"},
+    {image:"imagens/badvibesmemes 1.svg",name:"Luquinhas"},
+    {image:"imagens/badvibesmemes 1.svg",name:"Renanzinho do pop"},
+    {image:"imagens/badvibesmemes 1.svg",name:"Bryan"},
+    {image:"imagens/badvibesmemes 1.svg",name:"sei la"}
+]
 
 
 export default function Sugestoes(){
@@ -30,11 +37,9 @@ export default function Sugestoes(){
                         <span>Sugestões para você</span>
                         <a href="#">Ver tudo</a>
                     </div>
-                    <SugestoesPerfis image="imagens/badvibesmemes 1.svg" name="bad.vibes.memes"/>
-                    <SugestoesPerfis image="imagens/badvibesmemes 1.svg" name="Luquinhas"/>
-                    <SugestoesPerfis image="imagens/badvibesmemes 1.svg" name="Renanzinho do pop"/>
-                    <SugestoesPerfis image="imagens/badvibesmemes 1.svg" name="Bryan"/>
-                    <SugestoesPerfis image="imagens/badvibesmemes 1.svg" name="sei la"/>
+                    {
+                      perfis.map(perfisUser => <SugestoesPerfis image={perfisUser.image} name={perfisUser.name}/>)  
+                    }
                     <div class="rodape-sidebar">
                         <p>
                             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
