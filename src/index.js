@@ -1,12 +1,7 @@
 import ReactDOM from "react-dom";
-import Topo from "./topo";
+import App from "./componentes/app"
 
-function App(){
-    return(
-        <Topo />
-    );
 
-}
 
 
 ReactDOM.render(<App />, document.querySelector(".root"));

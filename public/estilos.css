@@ -64,3 +64,352 @@ header{
 .icones-acoes ion-icon{
     margin-right: 10px;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+}
+.todos-conteudos{
+    margin-top: 53px;
+    display: flex;
+    width: 935px;
+    height: 100vh;
+    position: relative;
+}
+.conteudo-primario{
+    width: 614px;
+    /*height: 100%;*/
+}
+.stores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 614px;
+    height: 118px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+.stores-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-left: 25px;
+    /*background-color: red;*/
+}
+.background-stores img{
+    /*font-size: 20px;*/
+    border-radius: 30px;
+    width: 55px;
+    height: 55px;
+}
+.stores-seta{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px grey;    
+}
+
+.background-stores{
+    display: flex;
+    /*width: 100%;*/
+    /*justify-content: center;*/
+    align-items: center;
+    background-image: url(imagens/stories_background\ 6.svg);
+    box-sizing: border-box;
+    padding: 5.5px;
+    margin-bottom: 5px;
+}
+.posts{
+    width: 614px;
+    height: 614px;
+    margin-top: 25px;
+}
+.caixas-conteudo{
+    width: 100%;
+    /*margin-top: 60px;*/
+    margin-bottom: 25px;
+}
+
+.topo-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    height: 70px;
+    border-radius: 3px; 
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+.topo-post ion-icon{
+    font-size: 25px;
+}
+.perfil-usuario{
+    display: flex;
+    align-items: center;
+}
+.perfil-usuario img{
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+.perfil-usuario span{
+    font-size: 14px;
+}
+.conteudo-post{
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+}
+.conteudo-post img{
+    width: 100%;
+    height: 100%;
+}
+
+.rodape-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    background-color: #ffffff;
+}
+.box-acoes-usuario{
+    display: flex;
+    justify-content: space-between;
+}
+.acoes-esquerda ion-icon:nth-child(1){
+    font-size: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.acoes-esquerda ion-icon:nth-child(2){
+    font-size: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.acoes-esquerda ion-icon:nth-child(3){
+    font-size: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-default{
+    color: black;
+}
+.curtiu{
+    color:red;
+}
+
+.acoes-direita{
+    font-size: 23px;
+    cursor: pointer;
+}
+.curtidas-usuarios{
+    display: flex;
+    align-items: center;
+}
+.curtidas-usuarios img{
+    width: 23px;
+    margin-right: 10px;
+}
+
+.curtidas-usuarios p{
+    color: #797878;
+    font-size: 14px;
+}
+.curtidas-usuarios strong{
+    color: black;
+}
+.sidebar-fixo{
+    width: 293px;
+    margin-top: 60px;
+    margin-left: 28px;
+}
+
+.box-sidebar{
+    position: fixed;
+    width: 293px;
+}
+.topo-sidebar{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif; 
+}
+.conta-perfil{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.conta-perfil span:nth-child(2){
+    color: #8E8E8E;
+}
+.separador-sidebar{
+    width: 293px;
+    height: 9px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.seguir-perfis-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+.seguir-perfis-cabecalho span{
+    color: #8E8E8E;
+}
+.seguir-perfis-cabecalho a{
+    color: #262626;
+    text-decoration: none;
+}
+.perfil-item{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.perfil-item a{
+    text-decoration: none;
+    color: #139EF2;
+}
+.descricao-perfil{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+.descricao-perfil span:nth-child(2){
+    color: #8E8E8E;
+}
+.rodape-sidebar{
+    margin-top: 35px;
+    font-size: 11px;
+    font-family: 'Roboto';
+    color: #C7C7C7;
+}
+.rodape-sidebar p:nth-child(2){
+    margin-top: 20px;
+}
+
+/* BARRA DE OPÇÕES DO MOBILE */
+footer{
+    width: 100%;
+   height: 54px;
+   display: none;
+}
+
+
+
+@media(max-width:935px){
+    .todos-conteudos{
+        display: flex;
+        justify-content: center;
+    }
+    .sidebar-fixo{
+        display: none;
+    }
+    
+}
+@media(max-width:614px){
+    main{
+        /*width: 100%;*/
+        box-sizing: border-box;
+        /*padding: 10px 0px;*/
+    }
+    .topo{
+        width: 100%;
+    }
+    .logos{
+        display: flex;
+        justify-content: space-between;
+        width: 63%;
+    }
+    .topo input{
+        display: none;
+    }
+    .logos .borda{
+        display: none;
+    }
+    .icones-acoes ion-icon:nth-child(2){
+        display: none;
+    }
+    .icones-acoes ion-icon:nth-child(3){
+        display: none;
+    }
+    .icones-acoes ion-icon:nth-child(4){
+        display: none;
+    }
+    .todos-conteudos{
+        width: 100%;
+        margin-bottom: 20px;
+        /*height: 100vh;*/
+        /*margin-bottom: 50px;*/
+    }
+    .conteudo-primario{
+        width: 100%;
+    }
+    .stores{
+        width: 100%;
+        background-color: #E5E5E5;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: 0;
+    }
+    .stores-itens{
+        width: 100%;
+    }
+    .stores-seta{
+        display: none;
+    }
+    .posts{
+        width: 100%;
+        margin-top: 0px;
+        box-sizing: border-box;
+        margin-bottom: 0px;
+        /*padding: 20px;*/
+    }
+    .caixas-conteudo{
+        /*padding: auto;*/
+        margin-top: 0px;
+        /*margin-bottom: 50px;*/
+    }
+    footer{
+        display: inline;
+        position: fixed;
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        height: 54px;
+        margin-top: 50px;
+        z-index: 1;
+        bottom: 0px;
+        left: 0px;
+        font-size: 25px;
+    }
+    .barra-inferior-mobile{
+        display: flex;
+        width: 100%;
+        padding-top: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }  
+   
+}
